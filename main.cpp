@@ -17,4 +17,10 @@ int main() {
         typedef std::vector<Variant>::const_iterator iter;
         typedef std::map<std::string, Variant> map;
 
+        variant_type type;
+        std::string val;
+        std::vector<Variant> list;
+        proc_type proc;
+        Entorno* env;
+
     }
