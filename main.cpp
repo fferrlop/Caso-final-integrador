@@ -23,4 +23,9 @@ int main() {
         proc_type proc;
         Entorno* env;
 
+
+        Variant(variant_type type = Symbol) : type(type) , env(0), proc(0) { }
+        Variant(variant_type type, const std::string& val) : type(type), val(val) , env(0) , proc(0) { }
+        Variant(proc_type proc) : type(Proc), proc(proc) , env(0) { }
+
     }
